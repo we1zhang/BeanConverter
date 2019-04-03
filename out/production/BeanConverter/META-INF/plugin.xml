@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>com.zw.beanConverter</id>
+    <name>beanConverter</name>
+    <version>1.0</version>
+    <vendor email="we1zhang1222@gmail.com" url="https://github.com/we1zhang">zw</vendor>
+
+    <description>
+        Generate bean converter method from another object.
+    </description>
+
+    <change-notes>
+        Initial release of the plugin.
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="beanConverter" class="com.zw.beanconverter.BeanConverterAction" text="Bean Converter">
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+        </action>
+    </actions>
+
+</idea-plugin>
